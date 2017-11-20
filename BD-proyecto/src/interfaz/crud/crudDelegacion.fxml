@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.crud.ControllerCrudDelegacion">
+    <children>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+            <children>
+                <Label text="Numero de partido: " />
+                <TextField fx:id="partido_Edit" />
+            </children>
+        </HBox>
+        <ScrollPane prefHeight="347.0" prefWidth="600.0">
+         <content>
+            <VBox fx:id="contenedorTablas" alignment="CENTER" prefHeight="295.0" prefWidth="598.0" />
+         </content>
+        </ScrollPane>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="600.0" spacing="10.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#agregarTitularOnClick" text="Agregar Titular" />
+            <Button mnemonicParsing="false" onAction="#agregarSuplenteOnClick" text="Agregar Suplente" />
+            <Button mnemonicParsing="false" onAction="#agregarDelegadoOnClick" text="Agregar Delegador" />
+            <Button mnemonicParsing="false" onAction="#agregarAsistenteOnClick" text="Agregar Asistente" />
+            <Button mnemonicParsing="false" onAction="#agregarMedicoOnClick" text="Agregar Medico" />
+            </children>
+        </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+         <children>
+                <Button mnemonicParsing="false" onAction="#borrarTitularOnClick" text="Borrar Titular" />
+            <Button mnemonicParsing="false" onAction="#borrarSuplenteOnClick" text="Borrar Suplente" />
+            <Button mnemonicParsing="false" onAction="#borrarDelegadoOnClick" text="Borrar Delegado" />
+            <Button mnemonicParsing="false" onAction="#borrarAsistenteOnClick" text="Borrar Asistente" />
+            <Button mnemonicParsing="false" onAction="#borrarMedicoOnClick" text="Borrar Medico" />
+         </children>
+      </HBox>
+    </children>
+</VBox>

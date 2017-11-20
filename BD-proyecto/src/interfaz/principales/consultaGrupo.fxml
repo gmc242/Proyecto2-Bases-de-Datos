@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.consultas.ControllerConsultaGrupo">
+    <children>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+            <children>
+                <Label text="Numero de Grupo" />
+                <TextField fx:id="primaryKey"/>
+                <Button fx:id="buscarBoton" mnemonicParsing="false" text="Buscar" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+            <children>
+                <Button fx:id="todasBoton" mnemonicParsing="false" text="Ver Todos los Grupos" />
+            </children>
+        </HBox>
+        <ScrollPane prefHeight="262.0" prefWidth="600.0">
+            <content>
+                <VBox fx:id="contenedorTablas" prefHeight="219.0" prefWidth="597.0" alignment="CENTER"/>
+            </content>
+        </ScrollPane>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+            <children>
+                <Button fx:id="agregarBoton" mnemonicParsing="false" text="Agregar" />
+                <Button fx:id="actualizarBoton" mnemonicParsing="false" text="Actualizar" />
+                <Button fx:id="eliminarBoton" mnemonicParsing="false" text="Eliminar" />
+            </children>
+        </HBox>
+    </children>
+</VBox>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="687.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerVentanaPrincipal">
+   <content>
+      <HBox maxHeight="645.0" maxWidth="1050.0" minHeight="600.0" minWidth="1000.0" prefHeight="645.0" prefWidth="1046.0">
+         <children>
+            <Accordion prefHeight="645.0" prefWidth="246.0">
+              <panes>
+                  <TitledPane animated="false" text="Administración de la BD">
+                     <content>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#porDefectoOnClick" text="Iniciar Sesion Con Datos Por Defecto" />
+                              <Button mnemonicParsing="false" onAction="#iniciarSesionOnClick" text="Iniciar Sesion" />
+                              <Button mnemonicParsing="false" onAction="#inicializarTablasOnClick" text="Inicializar Tablas" />
+                              <Button mnemonicParsing="false" onAction="#cargarDatosOnClick" text="Cargar Datos Por Defecto" />
+                              <Button mnemonicParsing="false" onAction="#borrarTablasOnClick" text="Borrar todas las tablas" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+                <TitledPane animated="false" text="Consultas">
+                     <content>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#consultaConfederacionOnClick" text="Consultas de Confederaciones" />
+                              <Button mnemonicParsing="false" onAction="#consultaPartidoOnClick" text="Consultas de Partidos" />
+                              <Button mnemonicParsing="false" onAction="#consultaEquipoOnClick" text="Consultas de Equipos" />
+                              <Button mnemonicParsing="false" onAction="#consultaGrupoOnClick" text="Consultas de Grupos" />
+                              <Button mnemonicParsing="false" onAction="#generalOnClick" text="Tabla General" />
+                              <Button mnemonicParsing="false" onAction="#goleoOnClick" text="Tabla de Goleo" />
+                              <Button mnemonicParsing="false" onAction="#amarillasOnClick" text="Tabla de Tarjetas Amarillas" />
+                              <Button mnemonicParsing="false" onAction="#rojasOnClick" text="Tabla de Tarjetas Rojas" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+                <TitledPane animated="false" text="Agregar Datos">
+                     <content>
+                        <VBox alignment="CENTER" prefHeight="519.0" prefWidth="170.0" spacing="10.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#agregarConfederacionOnClick" text="Agregar Confederacion" />
+                              <Button fx:id="agregarArbitroBoton" mnemonicParsing="false" onAction="#agregarArbitroOnClick" text="Agregar Arbitro" />
+                              <Button mnemonicParsing="false" onAction="#agregarEquipoOnClick" text="Agregar Equipo" />
+                              <Button mnemonicParsing="false" onAction="#agregarJugadorOnClick" text="Agregar Jugador" />
+                              <Button mnemonicParsing="false" onAction="#agregarEntrenadorOnClick" text="Agregar Entrenador" />
+                              <Button mnemonicParsing="false" onAction="#agregarFederativoOnClick" text="Agregar Federativo" />
+                              <Button mnemonicParsing="false" onAction="#agregarAsistenteOnClick" text="Agregar Asistente Tecnico" />
+                              <Button mnemonicParsing="false" onAction="#agregarPartidoOnClick" text="Agregar Partido" />
+                              <Button mnemonicParsing="false" onAction="#agregarGrupoOnClick" text="Agregar Grupo" />
+                              <Button mnemonicParsing="false" onAction="#agregarSedeOnClick" text="Agregar Sede" />
+                              <Button mnemonicParsing="false" onAction="#agregarDelegacionOnClick" text="Agregar Delegacion" />
+                              <Button mnemonicParsing="false" onAction="#agregarCuerpoArbitralOnClick" text="Agregar Cuerpo Arbitral" />
+                              <Button mnemonicParsing="false" onAction="#agregarGolOnClick" text="Agregar Gol" />
+                              <Button mnemonicParsing="false" onAction="#agregarReposicionOnClick" text="Agregar Reposicion" />
+                              <Button mnemonicParsing="false" onAction="#agregarTarjetaOnClick" text="Agregar Tarjeta" />
+                              <Button mnemonicParsing="false" onAction="#agregarPenalOnClick" text="Agregar Penal" />
+                           </children>
+                        </VBox>
+                     </content>
+                </TitledPane>
+                <TitledPane animated="false" text="Actualizar Datos">
+                     <content>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#actualizarConfederacionOnClick" text="Actualizar Confederacion" />
+                              <Button fx:id="actualizarArbitroBoton" mnemonicParsing="false" onAction="#actualizarArbitroOnClick" text="Actualizar Arbitro" />
+                              <Button mnemonicParsing="false" onAction="#actualizarEquipoOnClick" text="Actualizar Equipo" />
+                              <Button mnemonicParsing="false" onAction="#actualizarJugadorOnClick" text="Actualizar Jugador" />
+                              <Button mnemonicParsing="false" onAction="#actualizarEntrenadorOnClick" text="Actualizar Entrenador" />
+                              <Button mnemonicParsing="false" onAction="#actualizarFederativoOnClick" text="Actualizar Federativo" />
+                              <Button mnemonicParsing="false" onAction="#actualizarAsistenteOnClick" text="Actualizar Asistente Tecnico" />
+                              <Button mnemonicParsing="false" onAction="#actualizarPartidoOnClick" text="Actualizar Partido" />
+                              <Button mnemonicParsing="false" onAction="#actualizarGrupoOnClick" text="Actualizar Grupo" />
+                              <Button mnemonicParsing="false" onAction="#actualizarSedeOnClick" text="Actualizar Sede" />
+                              <Button mnemonicParsing="false" onAction="#actualizarDelegacionOnClick" text="Actualizar Delegacion" />
+                              <Button mnemonicParsing="false" onAction="#actualizarCuerpoArbitralOnClick" text="Actualizar Cuerpo Arbitral" />
+                              <Button mnemonicParsing="false" onAction="#actualizarGolOnClick" text="Actualizar Gol" />
+                              <Button mnemonicParsing="false" onAction="#actualizarReposicionOnClick" text="Actualizar Reposicion" />
+                              <Button mnemonicParsing="false" onAction="#actualizarPenalOnClick" text="Actualizar Penal" />
+                           </children>
+                        </VBox>
+                     </content>
+                </TitledPane>
+                  <TitledPane prefHeight="200.0" prefWidth="200.0" text="Borrar Datos">
+                     <content>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#borrarArbitroOnClick" text="Borrar Arbitro" />
+                              <Button mnemonicParsing="false" onAction="#borrarConfederacionOnClick" text="Borrar Confederacion" />
+                              <Button mnemonicParsing="false" onAction="#borrarEquipoOnClick" text="Borrar Equipo" />
+                              <Button mnemonicParsing="false" onAction="#borrarJugadorOnClick" text="Borrar Jugador" />
+                              <Button mnemonicParsing="false" onAction="#borrarEntrenadorOnClick" text="Borrar Entrenador" />
+                              <Button mnemonicParsing="false" onAction="#borrarFederativoOnClick" text="Borrar Federativo" />
+                              <Button mnemonicParsing="false" onAction="#borrarAsistenteOnClick" text="Borrar Asistente Tecnico" />
+                              <Button mnemonicParsing="false" onAction="#borrarPartidoOnClick" text="Borrar Partido" />
+                              <Button mnemonicParsing="false" onAction="#borrarGrupoOnClick" text="Borrar Grupo" />
+                              <Button mnemonicParsing="false" onAction="#borrarSedeOnClick" text="Borrar Sede" />
+                              <Button mnemonicParsing="false" onAction="#borrarDelegacionOnClick" text="Borrar Delegacion" />
+                              <Button mnemonicParsing="false" onAction="#borrarCuerpoArbitralOnClick" text="Borrar Cuerpo Arbitral" />
+                              <Button mnemonicParsing="false" onAction="#borrarGolOnClick" text="Borrar gol" />
+                              <Button mnemonicParsing="false" onAction="#borrarReposicionOnClick" text="Borrar Reposicion" />
+                              <Button mnemonicParsing="false" onAction="#borrarPenalesOnClick" text="Borrar Penales" />
+                              <Button mnemonicParsing="false" onAction="#borrarTarjetaOnClick" text="Borrar Tarjeta" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+                  </panes>
+            </Accordion>
+            <ScrollPane fx:id="contenedorParent" prefHeight="645.0" prefWidth="804.0">
+               <content>
+                  <VBox fx:id="contenedorPrincipal" alignment="CENTER" prefHeight="643.0" prefWidth="797.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+   </content>
+</ScrollPane>
